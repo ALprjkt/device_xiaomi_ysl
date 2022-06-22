@@ -134,6 +134,12 @@ vendor.display.enable_default_color_mode=0 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.gralloc.disable_ahardware_buffer=1
 
+# SkiaGL Threaded
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.renderengine.backend=skiaglthreaded \
+debug.hwui.renderer=skiagl \
+renderthread.skia.reduceopstasksplitting=true
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
