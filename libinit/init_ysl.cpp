@@ -112,4 +112,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.minidebuginfo", "false");
     property_override("dalvik.vm.dex2oat-minidebuginfo", "false");
 
+    // Set default bluetooth device name
+    property_override("bluetooth.device.default_name", "Redmi S2");
+
 }
