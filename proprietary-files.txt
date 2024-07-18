@@ -72,11 +72,6 @@ vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|fe0160756c94ff41c1669e82e3a8ef8e828
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|648159a5a7cd7760a512f27a226741336ebabc9e
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|44c0284d7fc1f4153a731d0792d71472109e9da2
 
-# Audio dirac - from xiaomi
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
-vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
-vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
-
 # ANT+ (vendor) - from LA.UM.8.6.2.r1-03700-89xx.0
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|29ecc1a9134dd2146f358e65c830059d3fa6c6d9
 
