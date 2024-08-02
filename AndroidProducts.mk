@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_ysl.mk
-
-COMMON_LUNCH_CHOICES := \
-    dot_ysl-user \
-    dot_ysl-userdebug \
-    dot_ysl-eng
+    $(LOCAL_DIR)/lineage_ysl.mk
