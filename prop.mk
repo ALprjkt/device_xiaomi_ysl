@@ -107,24 +107,18 @@ persist.debug.coresight.config=stm-events
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.egl.hw=0 \
-debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
-debug.sf.hw=0 \
-debug.sf.enable_hwc_vds=1 \
 debug.sdm.support_writeback=0 \
-debug.sf.latch_unsignaled=1 \
-debug.cpurend.vsync=false \
-debug.sf.recomputecrop=0 \
-dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
-persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
+debug.hwui.renderer=opengl \
+debug.hwui.skia_atrace_enabled=false \
+ro.hardware.egl=adreno \
+ro.hardware.vulkan=adreno \
 ro.opengles.version=196610 \
-ro.qualcomm.cabl=0 \
-ro.sf.lcd_density=320 \
+ro.sf.lcd_density=280 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
@@ -240,6 +234,33 @@ persist.vendor.ims.disableDebugDataPathLogs=1 \
 persist.vendor.ims.disableDebugLogs=1 \
 persist.vendor.ims.disableSigHandler=1 \
 persist.vendor.ims.disableQXDMLogs=1
+
+# SurfaceFlinger
+PRODUCT_SYSTEM_PROPERTIES += \
+debug.sf.use_phase_offsets_as_durations=1 \
+debug.sf.late.sf.duration=10500000 \
+debug.sf.late.app.duration=23500000 \
+debug.sf.early.sf.duration=21000000 \
+debug.sf.early.app.duration=16500000 \
+debug.sf.earlyGl.sf.duration=13500000 \
+debug.sf.earlyGl.app.duration=21000000 \
+debug.sf.disable_backpressure=1 \
+debug.sf.disable_hwc=0 \
+debug.sf.enable_hwc_vds=0 \
+debug.sf.latch_unsignaled=1 \
+debug.sf.auto_latch_unsignaled=true \
+debug.sf.recomputecrop=0 \
+debug.sf.enable_transaction_tracing=false \
+debug.sf.predict_hwc_composition_strategy=0 \
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+ro.surface_flinger.max_virtual_display_dimension=4096 \
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_touch_timer_ms=100 \
+ro.surface_flinger.set_idle_timer_ms=58 \
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
