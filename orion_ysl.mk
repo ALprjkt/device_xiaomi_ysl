@@ -17,11 +17,14 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Flags
+ORION_MAINTAINER := AL
+ORION_MAINTAINER_LINK := https://t.me/k4ngcaribug
 TARGET_BOOT_ANIMATION_RES := 720
+ORION_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := lineage_ysl
+PRODUCT_NAME := orion_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
