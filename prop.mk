@@ -292,3 +292,8 @@ sys.vendor.shutdown.waittime=500
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qc2.use.bqpool=1
+
+# Suppress several logspams on user builds
+PRODUCT_VENDOR_PROPERTIES += \
+persist.log.tag.Gralloc3=S \
+persist.log.tag.Gralloc4=S
