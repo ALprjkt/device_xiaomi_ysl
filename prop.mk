@@ -112,6 +112,7 @@ debug.cpurend.vsync=false \
 debug.egl.hw=1 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
+debug.hwui.renderer=skiagl \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=1 \
@@ -131,12 +132,6 @@ sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=0 \
 vendor.gralloc.enable_fb_ubwc=1
-
-# SkiaGL Threaded
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.renderengine.backend=skiaglthreaded \
-debug.hwui.renderer=skiagl \
-renderthread.skia.reduceopstasksplitting=true
 
 # Enable EGL image tracking on SF for b/137514000
 PRODUCT_PROPERTY_OVERRIDES += \
